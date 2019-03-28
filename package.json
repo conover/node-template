@@ -6,7 +6,8 @@
   "author": "Chris Conover<clcono@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "nodemon -w ./src -e ts -x \"tsc && node dist/index\""
+    "start:backend": "yarn && nodemon -w ./src/backend -e ts -x \"tsc && node dist/backend/index\"",
+    "start:frontend": "yarn && nodemon -w ./src/frontend -e ts -x \"tsc && node dist/frontend/index\""
   },
   "devDependencies": {
     "@types/jest": "^24.0.5",
